@@ -1,0 +1,91 @@
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+html{
+    font-size: 10px;
+    font-family: roboto, Arial, Helvetica, sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+/* : main */
+
+
+section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    h1{
+        font-size: 5rem;
+        text-transform: uppercase;
+        margin: 10vh 5vw;
+
+        span:hover{
+            /* font-size: 5.5rem; */
+            /* text-decoration:underline; */
+            opacity: 80%;
+        }
+    }
+
+    .superballs{
+        display: flex;
+        gap: 5vw;
+        div{
+        height: 100px;
+        width: 100px;
+        border: 1px solid white;
+        border-radius: 100px;
+        margin-bottom: 15vh;
+        }
+    }
+}
+
+.superball-1{
+    background-image: linear-gradient(to top right, #319b5e 50%, #79096a 50%);
+    cursor: pointer;
+}
+
+div:hover{
+    box-shadow: 3px 3px lightblue;
+}
+
+.superball-2{
+    background-image: linear-gradient(to top right, #4f4c7b 50%, #dfb74c 50% );
+    cursor: pointer;
+}
+
+.superball-3{
+    background-image: linear-gradient(to top right, #010023 50%, #cf6a0d 50% );
+    cursor: pointer;
+}
+
+.superball-4{
+    background-image: linear-gradient(to top right, #050255 50%, #43d4fe 50% );
+    cursor: pointer;
+}
+
+button{
+    font-size: 2rem;
+    padding: 2vh 4vw;
+    text-transform:lowercase;
+    border-radius: 45px;
+    background-color: rgb(202, 240, 252);
+    cursor: pointer;
+}
+
